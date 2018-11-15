@@ -1,0 +1,102 @@
+.main-content {
+    // margin: 4rem 0;
+    overflow: hidden;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(md) {
+        margin: 2rem 1rem;
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-up(lg) {
+        margin: 5rem 3rem;
+        font-size: 1.6rem;
+    }
+
+
+    p {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.2rem;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 1.6rem;
+        }
+    }
+
+    h1 {
+        margin: 1rem 0;
+        font-size: 2rem;
+        text-transform: capitalize;
+        // font-weight: lighter;
+
+        @include media-breakpoint-up(md) {
+            font-size: 2.6rem;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 3.8rem;
+        }
+    }
+
+    a {
+        color: $color-purple;
+        border-bottom: 2px solid $color-purple;
+        text-decoration: none;
+        display: inline;
+    }
+
+    a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+}
+
+blockquote {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    // border-left: 5px solid $color-purple;
+
+    color: black;
+    font-size: 2rem;
+    line-height: 1.4;
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+
+    @include media-breakpoint-up(md) {
+        width: 70%;
+    }
+    // @include media-breakpoint-up(lg) {
+    //     margin: 5rem 3rem;
+    //     font-size: 1.6rem;
+    // }
+
+}
+
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    color: black;
+}
+
+cite {
+    font-weight: lighter;
+    font-style: normal;
+}
+
+p.caption {
+    font-size: 1rem;
+    font-weight: bold;
+    // width: 100%;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+
+
