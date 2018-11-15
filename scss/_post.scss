@@ -25,6 +25,7 @@
             margin: 1rem 0;
             font-size: 2rem;
             text-transform: capitalize;
+            font-family: $font-light, sans-serif;
             // font-weight: lighter;
 
             @include media-breakpoint-up(md) {
